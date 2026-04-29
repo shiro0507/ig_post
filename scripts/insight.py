@@ -5,8 +5,8 @@ from datetime import datetime
 from pathlib import Path
 import zoneinfo
 
-ACCESS_TOKEN = os.environ.get("INSTAGRAM_ACCESS_TOKEN", "IGAASjyxqv0lRBZAFpRR29oRGpzRGJWWnhKMmRtbDc3OVF6SjhJbkVlelVzX05yUC1nNTR3RXBCa3hTTEJhTUxwSkR2VjA3SmpISUZATT0VsVHd6bGVndm1jMWNIYVhQQ0xUSFpIVk1zNG05R2VTNjk4N24yMksxT0NxMnE4bTFCSQZDZD")
-ACCOUNT_ID = os.environ.get("INSTAGRAM_ACCOUNT_ID", "26806844172340114")
+ACCESS_TOKEN = os.environ["INSTAGRAM_ACCESS_TOKEN"]
+ACCOUNT_ID = os.environ["INSTAGRAM_ACCOUNT_ID"]
 IG_API = "https://graph.instagram.com/v25.0"
 JSON_FILE = Path("data/insta_stats.json")
 

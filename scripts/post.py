@@ -6,11 +6,8 @@ import requests
 from datetime import date
 from pathlib import Path
 
-#ACCESS_TOKEN = os.environ["INSTAGRAM_ACCESS_TOKEN"]
-#ACCOUNT_ID = os.environ["INSTAGRAM_ACCOUNT_ID"]
-
-ACCESS_TOKEN = "IGAASjyxqv0lRBZAFpRR29oRGpzRGJWWnhKMmRtbDc3OVF6SjhJbkVlelVzX05yUC1nNTR3RXBCa3hTTEJhTUxwSkR2VjA3SmpISUZATT0VsVHd6bGVndm1jMWNIYVhQQ0xUSFpIVk1zNG05R2VTNjk4N24yMksxT0NxMnE4bTFCSQZDZD"
-ACCOUNT_ID = "26806844172340114"
+ACCESS_TOKEN = os.environ["INSTAGRAM_ACCESS_TOKEN"]
+ACCOUNT_ID = os.environ["INSTAGRAM_ACCOUNT_ID"]
 
 GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "shiro0507/ig_post")
 IG_API = "https://graph.instagram.com/v25.0"
