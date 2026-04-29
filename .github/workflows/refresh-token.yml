@@ -1,0 +1,24 @@
+name: Refresh Instagram Token
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # 毎月1日 00:00 UTC
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install requests
+
+      - name: Refresh access token
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: python scripts/refresh_token.py
