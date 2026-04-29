@@ -13,17 +13,33 @@ GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "shiro0507/ig_post")
 IG_API = "https://graph.instagram.com/v25.0"
 
 
-def get_content(target_date: str, skip_video_check: bool = False) -> tuple[Path, str]:
+def parse_thumb_offset(value: str, fps: float) -> int:
+    parts = value.strip().replace(".", ":").split(":")
+    if len(parts) != 3:
+        raise ValueError(f"thumb_offset must be hh:mm:ff format, got: {value!r}")
+    hh, mm, ff = int(parts[0]), int(parts[1]), int(parts[2])
+    return int((hh * 3600 + mm * 60) * 1000 + (ff / fps) * 1000)
+
+
+def get_content(target_date: str, skip_video_check: bool = False) -> tuple[Path, str, int | None]:
     content_dir = Path("content") / target_date
     video_path = content_dir / "video.mp4"
     caption_path = content_dir / "caption.txt"
+    thumb_offset_path = content_dir / "thumb_offset.txt"
+    fps_path = content_dir / "fps.txt"
 
     if not skip_video_check and not video_path.exists():
         print(f"No content found for {target_date}, skipping.")
         sys.exit(0)
 
     caption = caption_path.read_text(encoding="utf-8").strip() if caption_path.exists() else ""
-    return video_path, caption
+
+    thumb_offset = None
+    if thumb_offset_path.exists():
+        fps = float(fps_path.read_text().strip()) if fps_path.exists() else 30.0
+        thumb_offset = parse_thumb_offset(thumb_offset_path.read_text(), fps)
+
+    return video_path, caption, thumb_offset
 
 
 def get_video_url(video_path: Path, target_date: str) -> str:
@@ -44,17 +60,17 @@ def _validate_video_url(url: str):
             )
 
 
-def create_reel_container(video_url: str, caption: str) -> str:
-    r = requests.post(
-        f"{IG_API}/{ACCOUNT_ID}/media",
-        params={
-            "media_type": "REELS",
-            "video_url": video_url,
-            "caption": caption,
-            "share_to_feed": "true",
-            "access_token": ACCESS_TOKEN,
-        },
-    )
+def create_reel_container(video_url: str, caption: str, thumb_offset: int | None = None) -> str:
+    params = {
+        "media_type": "REELS",
+        "video_url": video_url,
+        "caption": caption,
+        "share_to_feed": "true",
+        "access_token": ACCESS_TOKEN,
+    }
+    if thumb_offset is not None:
+        params["thumb_offset"] = thumb_offset
+    r = requests.post(f"{IG_API}/{ACCOUNT_ID}/media", params=params)
     r.raise_for_status()
     return r.json()["id"]
 
@@ -91,12 +107,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", help="Target date (YYYY-MM-DD), defaults to today")
     parser.add_argument("--video-url", help="Direct video URL (skips GitHub URL construction)")
+    parser.add_argument("--thumb-offset", type=int, help="Thumbnail frame offset in milliseconds")
     args = parser.parse_args()
 
     target_date = args.date or date.today().isoformat()
     print(f"Posting content for {target_date}")
 
-    _, caption = get_content(target_date, skip_video_check=bool(args.video_url))
+    _, caption, thumb_offset = get_content(target_date, skip_video_check=bool(args.video_url))
     if args.video_url:
         video_url = args.video_url
     elif GITHUB_REPOSITORY:
@@ -107,7 +124,7 @@ def main():
     _validate_video_url(video_url)
 
     print("Creating Instagram media container...")
-    container_id = create_reel_container(video_url, caption)
+    container_id = create_reel_container(video_url, caption, args.thumb_offset if args.thumb_offset is not None else thumb_offset)
     print(f"Container ID: {container_id}")
 
     print("Waiting for Instagram to process the video...")
