@@ -2,7 +2,7 @@ name: Collect Instagram Insights
 
 on:
   schedule:
-    - cron: '30 0 * * *'  # 00:30 UTC = 09:30 JST (after post workflow)
+    - cron: '0 21 * * *'  # 21:00 UTC = 06:00 JST
   workflow_dispatch:
 
 jobs:
