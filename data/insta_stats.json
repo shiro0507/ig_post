@@ -351,6 +351,10 @@
     {
       "date": "2026-04-29",
       "followers_count": 3
+    },
+    {
+      "date": "2026-04-30",
+      "followers_count": 0
     }
   ],
   "17984264108995387": {
@@ -1214,6 +1218,22 @@
         "saved": 0,
         "total_interactions": 2,
         "likes": 2,
+        "comments": 0,
+        "shares": 0
+      }
+    ]
+  },
+  "18074901020242633": {
+    "caption": "パートナーの様子が最近変わった…そう感じているなら、この10",
+    "created_at": "2026-04-29T11:43:02+0000",
+    "history": [
+      {
+        "date": "2026-04-30",
+        "views": 163,
+        "reach": 151,
+        "saved": 0,
+        "total_interactions": 0,
+        "likes": 0,
         "comments": 0,
         "shares": 0
       }
