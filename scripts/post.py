@@ -14,9 +14,12 @@ IG_API = "https://graph.instagram.com/v25.0"
 
 
 def parse_thumb_offset(value: str, fps: float) -> int:
-    parts = value.strip().replace(".", ":").split(":")
+    stripped = value.strip()
+    if stripped.isdigit():
+        return int(int(stripped) / fps * 1000)
+    parts = stripped.replace(".", ":").split(":")
     if len(parts) != 3:
-        raise ValueError(f"thumb_offset must be hh:mm:ff format, got: {value!r}")
+        raise ValueError(f"thumb_offset must be frame number or hh:mm:ff format, got: {value!r}")
     hh, mm, ff = int(parts[0]), int(parts[1]), int(parts[2])
     return int((hh * 3600 + mm * 60) * 1000 + (ff / fps) * 1000)
 
