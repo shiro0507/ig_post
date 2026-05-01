@@ -359,6 +359,10 @@
     {
       "date": "2026-05-01",
       "followers_count": 1
+    },
+    {
+      "date": "2026-05-02",
+      "followers_count": 1
     }
   ],
   "17984264108995387": {
@@ -1250,6 +1254,16 @@
         "likes": 1,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-02",
+        "views": 1096,
+        "reach": 1016,
+        "saved": 5,
+        "total_interactions": 7,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -1264,6 +1278,32 @@
         "saved": 0,
         "total_interactions": 0,
         "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      {
+        "date": "2026-05-02",
+        "views": 444,
+        "reach": 404,
+        "saved": 0,
+        "total_interactions": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
+      }
+    ]
+  },
+  "18126115000591435": {
+    "caption": "不倫がバレた直後、あなたはどう動きますか？😱\n感情のままに行",
+    "created_at": "2026-05-01T10:32:23+0000",
+    "history": [
+      {
+        "date": "2026-05-02",
+        "views": 476,
+        "reach": 418,
+        "saved": 2,
+        "total_interactions": 5,
+        "likes": 3,
         "comments": 0,
         "shares": 0
       }
