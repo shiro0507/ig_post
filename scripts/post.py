@@ -47,7 +47,8 @@ def get_content(target_date: str, skip_video_check: bool = False) -> tuple[Path,
 
 def get_video_url(video_path: Path, target_date: str) -> str:
     owner, repo = GITHUB_REPOSITORY.split("/", 1)
-    return f"https://raw.githubusercontent.com/{owner}/{repo}/main/content/{target_date}/{video_path.name}"
+    sha = os.environ.get("GITHUB_SHA", "main")
+    return f"https://raw.githubusercontent.com/{owner}/{repo}/{sha}/content/{target_date}/{video_path.name}"
 
 
 _BLOCKED_HOSTS = ("github.com/", "github.com:")
