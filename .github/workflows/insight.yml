@@ -30,6 +30,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/insta_stats.json
+          git add -f data/insta_stats.json
           git diff --cached --quiet || git commit -m "chore: update insta_stats $(date -u +%Y-%m-%d)"
           git push
