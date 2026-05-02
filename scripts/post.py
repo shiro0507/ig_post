@@ -50,20 +50,7 @@ def get_video_url(video_path: Path, target_date: str) -> str:
     return f"https://raw.githubusercontent.com/{owner}/{repo}/main/content/{target_date}/{video_path.name}"
 
 
-_BLOCKED_HOSTS = ("github.com/", "github.com:")
-
-def _validate_video_url(url: str):
-    for host in _BLOCKED_HOSTS:
-        if host in url:
-            raise ValueError(
-                f"Instagram cannot fetch videos from {url!r} — "
-                "GitHub's robots.txt blocks its crawler.\n"
-                "Use raw.githubusercontent.com (commit the file to the repo) "
-                "or a public CDN (S3, R2, etc.)."
-            )
-
-
-def create_reel_container(video_url: str, caption: str, thumb_offset: int | None = None) -> str:
+def create_reel_container_url(video_url: str, caption: str, thumb_offset: int | None = None) -> str:
     params = {
         "media_type": "REELS",
         "video_url": video_url,
@@ -76,6 +63,35 @@ def create_reel_container(video_url: str, caption: str, thumb_offset: int | None
     r = requests.post(f"{IG_API}/{ACCOUNT_ID}/media", params=params)
     r.raise_for_status()
     return r.json()["id"]
+
+
+def create_reel_container_resumable(caption: str, thumb_offset: int | None = None) -> tuple[str, str]:
+    params = {
+        "media_type": "REELS",
+        "upload_type": "resumable",
+        "caption": caption,
+        "share_to_feed": "true",
+        "access_token": ACCESS_TOKEN,
+    }
+    if thumb_offset is not None:
+        params["thumb_offset"] = thumb_offset
+    r = requests.post(f"{IG_API}/{ACCOUNT_ID}/media", params=params)
+    r.raise_for_status()
+    data = r.json()
+    return data["id"], data["uri"]
+
+
+def upload_video_resumable(upload_uri: str, video_path: Path):
+    file_size = video_path.stat().st_size
+    with open(video_path, "rb") as f:
+        video_data = f.read()
+    headers = {
+        "Authorization": f"OAuth {ACCESS_TOKEN}",
+        "offset": "0",
+        "file_size": str(file_size),
+    }
+    r = requests.post(upload_uri, headers=headers, data=video_data)
+    r.raise_for_status()
 
 
 def wait_for_container(container_id: str, timeout: int = 300):
@@ -116,18 +132,18 @@ def main():
     target_date = args.date or date.today().isoformat()
     print(f"Posting content for {target_date}")
 
-    _, caption, thumb_offset = get_content(target_date, skip_video_check=bool(args.video_url))
-    if args.video_url:
-        video_url = args.video_url
-    elif GITHUB_REPOSITORY:
-        video_url = get_video_url(Path(f"content/{target_date}/video.mp4"), target_date)
-    else:
-        parser.error("--video-url is required when GITHUB_REPOSITORY is not set")
-    print(f"Video URL: {video_url}")
-    _validate_video_url(video_url)
+    video_path, caption, thumb_offset = get_content(target_date, skip_video_check=bool(args.video_url))
+    effective_thumb_offset = args.thumb_offset if args.thumb_offset is not None else thumb_offset
 
     print("Creating Instagram media container...")
-    container_id = create_reel_container(video_url, caption, args.thumb_offset if args.thumb_offset is not None else thumb_offset)
+    if args.video_url:
+        print(f"Video URL: {args.video_url}")
+        container_id = create_reel_container_url(args.video_url, caption, effective_thumb_offset)
+    else:
+        print(f"Uploading video: {video_path} ({video_path.stat().st_size // 1024} KB)")
+        container_id, upload_uri = create_reel_container_resumable(caption, effective_thumb_offset)
+        print("Uploading video bytes...")
+        upload_video_resumable(upload_uri, video_path)
     print(f"Container ID: {container_id}")
 
     print("Waiting for Instagram to process the video...")
