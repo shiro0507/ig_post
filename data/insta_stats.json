@@ -11,6 +11,10 @@
     {
       "date": "2026-05-05",
       "followers_count": 12
+    },
+    {
+      "date": "2026-05-06",
+      "followers_count": 12
     }
   ],
   "18001719284744959": {
@@ -46,6 +50,16 @@
         "likes": 30,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-06",
+        "views": 8772,
+        "reach": 7717,
+        "saved": 19,
+        "total_interactions": 57,
+        "likes": 36,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -77,6 +91,16 @@
         "date": "2026-05-05",
         "views": 1060,
         "reach": 928,
+        "saved": 4,
+        "total_interactions": 9,
+        "likes": 5,
+        "comments": 0,
+        "shares": 0
+      },
+      {
+        "date": "2026-05-06",
+        "views": 1090,
+        "reach": 947,
         "saved": 4,
         "total_interactions": 9,
         "likes": 5,
@@ -118,6 +142,16 @@
         "likes": 1,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-06",
+        "views": 646,
+        "reach": 550,
+        "saved": 0,
+        "total_interactions": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -154,6 +188,16 @@
         "likes": 2,
         "comments": 0,
         "shares": 1
+      },
+      {
+        "date": "2026-05-06",
+        "views": 1215,
+        "reach": 1096,
+        "saved": 7,
+        "total_interactions": 10,
+        "likes": 2,
+        "comments": 0,
+        "shares": 1
       }
     ]
   },
@@ -180,6 +224,16 @@
         "likes": 23,
         "comments": 0,
         "shares": 2
+      },
+      {
+        "date": "2026-05-06",
+        "views": 7130,
+        "reach": 6014,
+        "saved": 14,
+        "total_interactions": 43,
+        "likes": 27,
+        "comments": 0,
+        "shares": 2
       }
     ]
   },
@@ -196,6 +250,32 @@
         "likes": 0,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-06",
+        "views": 267,
+        "reach": 237,
+        "saved": 0,
+        "total_interactions": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    ]
+  },
+  "18087187919048495": {
+    "caption": "浮気を「浮気じゃない」と言い張られた経験、ありませんか？🙅\n",
+    "created_at": "2026-05-05T10:35:54+0000",
+    "history": [
+      {
+        "date": "2026-05-06",
+        "views": 1210,
+        "reach": 992,
+        "saved": 9,
+        "total_interactions": 14,
+        "likes": 4,
+        "comments": 0,
+        "shares": 1
       }
     ]
   }
