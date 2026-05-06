@@ -15,6 +15,10 @@
     {
       "date": "2026-05-06",
       "followers_count": 12
+    },
+    {
+      "date": "2026-05-07",
+      "followers_count": 21
     }
   ],
   "18001719284744959": {
@@ -60,6 +64,16 @@
         "likes": 36,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-07",
+        "views": 10307,
+        "reach": 8956,
+        "saved": 23,
+        "total_interactions": 66,
+        "likes": 39,
+        "comments": 0,
+        "shares": 2
       }
     ]
   },
@@ -101,6 +115,16 @@
         "date": "2026-05-06",
         "views": 1090,
         "reach": 947,
+        "saved": 4,
+        "total_interactions": 9,
+        "likes": 5,
+        "comments": 0,
+        "shares": 0
+      },
+      {
+        "date": "2026-05-07",
+        "views": 1122,
+        "reach": 971,
         "saved": 4,
         "total_interactions": 9,
         "likes": 5,
@@ -152,6 +176,16 @@
         "likes": 1,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-07",
+        "views": 675,
+        "reach": 569,
+        "saved": 0,
+        "total_interactions": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -198,6 +232,16 @@
         "likes": 2,
         "comments": 0,
         "shares": 1
+      },
+      {
+        "date": "2026-05-07",
+        "views": 1241,
+        "reach": 1117,
+        "saved": 7,
+        "total_interactions": 11,
+        "likes": 3,
+        "comments": 0,
+        "shares": 1
       }
     ]
   },
@@ -234,6 +278,16 @@
         "likes": 27,
         "comments": 0,
         "shares": 2
+      },
+      {
+        "date": "2026-05-07",
+        "views": 7832,
+        "reach": 6547,
+        "saved": 16,
+        "total_interactions": 50,
+        "likes": 32,
+        "comments": 0,
+        "shares": 2
       }
     ]
   },
@@ -260,6 +314,16 @@
         "likes": 0,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-07",
+        "views": 340,
+        "reach": 305,
+        "saved": 0,
+        "total_interactions": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -276,6 +340,32 @@
         "likes": 4,
         "comments": 0,
         "shares": 1
+      },
+      {
+        "date": "2026-05-07",
+        "views": 2397,
+        "reach": 1885,
+        "saved": 26,
+        "total_interactions": 41,
+        "likes": 13,
+        "comments": 0,
+        "shares": 1
+      }
+    ]
+  },
+  "17859106473634111": {
+    "caption": "不倫が発覚したとき、慰謝料はいくら請求できるの？💔\n不貞行為",
+    "created_at": "2026-05-06T10:43:24+0000",
+    "history": [
+      {
+        "date": "2026-05-07",
+        "views": 486,
+        "reach": 368,
+        "saved": 1,
+        "total_interactions": 2,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
       }
     ]
   }
