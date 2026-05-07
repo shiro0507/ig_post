@@ -19,6 +19,10 @@
     {
       "date": "2026-05-07",
       "followers_count": 21
+    },
+    {
+      "date": "2026-05-08",
+      "followers_count": 34
     }
   ],
   "18001719284744959": {
@@ -74,6 +78,16 @@
         "likes": 39,
         "comments": 0,
         "shares": 2
+      },
+      {
+        "date": "2026-05-08",
+        "views": 11630,
+        "reach": 10086,
+        "saved": 29,
+        "total_interactions": 74,
+        "likes": 41,
+        "comments": 0,
+        "shares": 2
       }
     ]
   },
@@ -125,6 +139,16 @@
         "date": "2026-05-07",
         "views": 1122,
         "reach": 971,
+        "saved": 4,
+        "total_interactions": 9,
+        "likes": 5,
+        "comments": 0,
+        "shares": 0
+      },
+      {
+        "date": "2026-05-08",
+        "views": 1164,
+        "reach": 995,
         "saved": 4,
         "total_interactions": 9,
         "likes": 5,
@@ -186,6 +210,16 @@
         "likes": 1,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-08",
+        "views": 710,
+        "reach": 589,
+        "saved": 0,
+        "total_interactions": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -242,6 +276,16 @@
         "likes": 3,
         "comments": 0,
         "shares": 1
+      },
+      {
+        "date": "2026-05-08",
+        "views": 1281,
+        "reach": 1133,
+        "saved": 7,
+        "total_interactions": 11,
+        "likes": 3,
+        "comments": 0,
+        "shares": 1
       }
     ]
   },
@@ -288,6 +332,16 @@
         "likes": 32,
         "comments": 0,
         "shares": 2
+      },
+      {
+        "date": "2026-05-08",
+        "views": 8299,
+        "reach": 6819,
+        "saved": 17,
+        "total_interactions": 54,
+        "likes": 35,
+        "comments": 0,
+        "shares": 2
       }
     ]
   },
@@ -324,6 +378,16 @@
         "likes": 0,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-08",
+        "views": 374,
+        "reach": 330,
+        "saved": 0,
+        "total_interactions": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -350,6 +414,16 @@
         "likes": 13,
         "comments": 0,
         "shares": 1
+      },
+      {
+        "date": "2026-05-08",
+        "views": 3390,
+        "reach": 2780,
+        "saved": 41,
+        "total_interactions": 64,
+        "likes": 21,
+        "comments": 0,
+        "shares": 1
       }
     ]
   },
@@ -364,6 +438,32 @@
         "saved": 1,
         "total_interactions": 2,
         "likes": 1,
+        "comments": 0,
+        "shares": 0
+      },
+      {
+        "date": "2026-05-08",
+        "views": 1060,
+        "reach": 879,
+        "saved": 2,
+        "total_interactions": 10,
+        "likes": 8,
+        "comments": 0,
+        "shares": 0
+      }
+    ]
+  },
+  "18095396633138629": {
+    "caption": "「もしかして浮気？」そう思った瞬間、あなたは今どちらにいます",
+    "created_at": "2026-05-07T10:46:41+0000",
+    "history": [
+      {
+        "date": "2026-05-08",
+        "views": 430,
+        "reach": 360,
+        "saved": 3,
+        "total_interactions": 8,
+        "likes": 5,
         "comments": 0,
         "shares": 0
       }
