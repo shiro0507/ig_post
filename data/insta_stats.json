@@ -23,6 +23,10 @@
     {
       "date": "2026-05-08",
       "followers_count": 34
+    },
+    {
+      "date": "2026-05-09",
+      "followers_count": 44
     }
   ],
   "18001719284744959": {
@@ -88,6 +92,16 @@
         "likes": 41,
         "comments": 0,
         "shares": 2
+      },
+      {
+        "date": "2026-05-09",
+        "views": 12634,
+        "reach": 10961,
+        "saved": 31,
+        "total_interactions": 77,
+        "likes": 42,
+        "comments": 0,
+        "shares": 2
       }
     ]
   },
@@ -149,6 +163,16 @@
         "date": "2026-05-08",
         "views": 1164,
         "reach": 995,
+        "saved": 4,
+        "total_interactions": 9,
+        "likes": 5,
+        "comments": 0,
+        "shares": 0
+      },
+      {
+        "date": "2026-05-09",
+        "views": 1186,
+        "reach": 1013,
         "saved": 4,
         "total_interactions": 9,
         "likes": 5,
@@ -220,6 +244,16 @@
         "likes": 1,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-09",
+        "views": 733,
+        "reach": 605,
+        "saved": 1,
+        "total_interactions": 3,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -286,6 +320,16 @@
         "likes": 3,
         "comments": 0,
         "shares": 1
+      },
+      {
+        "date": "2026-05-09",
+        "views": 1310,
+        "reach": 1155,
+        "saved": 7,
+        "total_interactions": 12,
+        "likes": 4,
+        "comments": 0,
+        "shares": 1
       }
     ]
   },
@@ -342,6 +386,16 @@
         "likes": 35,
         "comments": 0,
         "shares": 2
+      },
+      {
+        "date": "2026-05-09",
+        "views": 8780,
+        "reach": 7097,
+        "saved": 18,
+        "total_interactions": 57,
+        "likes": 37,
+        "comments": 0,
+        "shares": 2
       }
     ]
   },
@@ -388,6 +442,16 @@
         "likes": 0,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-09",
+        "views": 400,
+        "reach": 348,
+        "saved": 0,
+        "total_interactions": 2,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -424,6 +488,16 @@
         "likes": 21,
         "comments": 0,
         "shares": 1
+      },
+      {
+        "date": "2026-05-09",
+        "views": 4015,
+        "reach": 3259,
+        "saved": 52,
+        "total_interactions": 88,
+        "likes": 31,
+        "comments": 0,
+        "shares": 4
       }
     ]
   },
@@ -450,6 +524,16 @@
         "likes": 8,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-09",
+        "views": 1377,
+        "reach": 1150,
+        "saved": 3,
+        "total_interactions": 13,
+        "likes": 10,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -464,6 +548,32 @@
         "saved": 3,
         "total_interactions": 8,
         "likes": 5,
+        "comments": 0,
+        "shares": 0
+      },
+      {
+        "date": "2026-05-09",
+        "views": 1485,
+        "reach": 1124,
+        "saved": 10,
+        "total_interactions": 23,
+        "likes": 13,
+        "comments": 0,
+        "shares": 0
+      }
+    ]
+  },
+  "18114130996808459": {
+    "caption": "浮気している人が使う言い訳、実はパターンが決まっています 😮",
+    "created_at": "2026-05-08T10:33:44+0000",
+    "history": [
+      {
+        "date": "2026-05-09",
+        "views": 745,
+        "reach": 596,
+        "saved": 1,
+        "total_interactions": 5,
+        "likes": 4,
         "comments": 0,
         "shares": 0
       }
