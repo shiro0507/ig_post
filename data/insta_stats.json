@@ -27,6 +27,10 @@
     {
       "date": "2026-05-09",
       "followers_count": 44
+    },
+    {
+      "date": "2026-05-10",
+      "followers_count": 50
     }
   ],
   "18001719284744959": {
@@ -102,6 +106,16 @@
         "likes": 42,
         "comments": 0,
         "shares": 2
+      },
+      {
+        "date": "2026-05-10",
+        "views": 13388,
+        "reach": 11597,
+        "saved": 32,
+        "total_interactions": 79,
+        "likes": 43,
+        "comments": 0,
+        "shares": 2
       }
     ]
   },
@@ -173,6 +187,16 @@
         "date": "2026-05-09",
         "views": 1186,
         "reach": 1013,
+        "saved": 4,
+        "total_interactions": 9,
+        "likes": 5,
+        "comments": 0,
+        "shares": 0
+      },
+      {
+        "date": "2026-05-10",
+        "views": 1208,
+        "reach": 1028,
         "saved": 4,
         "total_interactions": 9,
         "likes": 5,
@@ -254,6 +278,16 @@
         "likes": 2,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-10",
+        "views": 757,
+        "reach": 619,
+        "saved": 1,
+        "total_interactions": 3,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -330,6 +364,16 @@
         "likes": 4,
         "comments": 0,
         "shares": 1
+      },
+      {
+        "date": "2026-05-10",
+        "views": 1337,
+        "reach": 1171,
+        "saved": 7,
+        "total_interactions": 12,
+        "likes": 4,
+        "comments": 0,
+        "shares": 1
       }
     ]
   },
@@ -396,6 +440,16 @@
         "likes": 37,
         "comments": 0,
         "shares": 2
+      },
+      {
+        "date": "2026-05-10",
+        "views": 9194,
+        "reach": 7393,
+        "saved": 18,
+        "total_interactions": 58,
+        "likes": 38,
+        "comments": 0,
+        "shares": 2
       }
     ]
   },
@@ -452,6 +506,16 @@
         "likes": 2,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-10",
+        "views": 429,
+        "reach": 371,
+        "saved": 0,
+        "total_interactions": 2,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -498,6 +562,16 @@
         "likes": 31,
         "comments": 0,
         "shares": 4
+      },
+      {
+        "date": "2026-05-10",
+        "views": 4419,
+        "reach": 3595,
+        "saved": 57,
+        "total_interactions": 102,
+        "likes": 39,
+        "comments": 1,
+        "shares": 4
       }
     ]
   },
@@ -534,6 +608,16 @@
         "likes": 10,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-10",
+        "views": 1612,
+        "reach": 1364,
+        "saved": 3,
+        "total_interactions": 14,
+        "likes": 11,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -560,6 +644,16 @@
         "likes": 13,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-10",
+        "views": 2041,
+        "reach": 1619,
+        "saved": 15,
+        "total_interactions": 33,
+        "likes": 18,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -576,6 +670,32 @@
         "likes": 4,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-10",
+        "views": 4108,
+        "reach": 3466,
+        "saved": 14,
+        "total_interactions": 27,
+        "likes": 12,
+        "comments": 0,
+        "shares": 0
+      }
+    ]
+  },
+  "18120816394642351": {
+    "caption": "パートナーへの疑いが出始めたとき、感情的に動くのが一番危険で",
+    "created_at": "2026-05-09T10:23:14+0000",
+    "history": [
+      {
+        "date": "2026-05-10",
+        "views": 304,
+        "reach": 244,
+        "saved": 2,
+        "total_interactions": 5,
+        "likes": 0,
+        "comments": 1,
+        "shares": 2
       }
     ]
   }
