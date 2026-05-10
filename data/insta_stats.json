@@ -31,6 +31,10 @@
     {
       "date": "2026-05-10",
       "followers_count": 50
+    },
+    {
+      "date": "2026-05-11",
+      "followers_count": 55
     }
   ],
   "18001719284744959": {
@@ -116,6 +120,16 @@
         "likes": 43,
         "comments": 0,
         "shares": 2
+      },
+      {
+        "date": "2026-05-11",
+        "views": 13966,
+        "reach": 11996,
+        "saved": 32,
+        "total_interactions": 81,
+        "likes": 45,
+        "comments": 0,
+        "shares": 2
       }
     ]
   },
@@ -197,6 +211,16 @@
         "date": "2026-05-10",
         "views": 1208,
         "reach": 1028,
+        "saved": 4,
+        "total_interactions": 9,
+        "likes": 5,
+        "comments": 0,
+        "shares": 0
+      },
+      {
+        "date": "2026-05-11",
+        "views": 1239,
+        "reach": 1053,
         "saved": 4,
         "total_interactions": 9,
         "likes": 5,
@@ -288,6 +312,16 @@
         "likes": 2,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-11",
+        "views": 786,
+        "reach": 632,
+        "saved": 1,
+        "total_interactions": 3,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -374,6 +408,16 @@
         "likes": 4,
         "comments": 0,
         "shares": 1
+      },
+      {
+        "date": "2026-05-11",
+        "views": 1368,
+        "reach": 1194,
+        "saved": 7,
+        "total_interactions": 12,
+        "likes": 4,
+        "comments": 0,
+        "shares": 1
       }
     ]
   },
@@ -450,6 +494,16 @@
         "likes": 38,
         "comments": 0,
         "shares": 2
+      },
+      {
+        "date": "2026-05-11",
+        "views": 9619,
+        "reach": 7711,
+        "saved": 19,
+        "total_interactions": 61,
+        "likes": 40,
+        "comments": 0,
+        "shares": 2
       }
     ]
   },
@@ -516,6 +570,16 @@
         "likes": 2,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-11",
+        "views": 463,
+        "reach": 395,
+        "saved": 0,
+        "total_interactions": 3,
+        "likes": 2,
+        "comments": 1,
+        "shares": 0
       }
     ]
   },
@@ -572,6 +636,16 @@
         "likes": 39,
         "comments": 1,
         "shares": 4
+      },
+      {
+        "date": "2026-05-11",
+        "views": 5096,
+        "reach": 4180,
+        "saved": 68,
+        "total_interactions": 126,
+        "likes": 50,
+        "comments": 1,
+        "shares": 5
       }
     ]
   },
@@ -618,6 +692,16 @@
         "likes": 11,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-11",
+        "views": 1644,
+        "reach": 1386,
+        "saved": 4,
+        "total_interactions": 15,
+        "likes": 11,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -654,6 +738,16 @@
         "likes": 18,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-11",
+        "views": 2428,
+        "reach": 1923,
+        "saved": 21,
+        "total_interactions": 40,
+        "likes": 19,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -680,6 +774,16 @@
         "likes": 12,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-11",
+        "views": 5101,
+        "reach": 4382,
+        "saved": 16,
+        "total_interactions": 31,
+        "likes": 14,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -696,6 +800,32 @@
         "likes": 0,
         "comments": 1,
         "shares": 2
+      },
+      {
+        "date": "2026-05-11",
+        "views": 463,
+        "reach": 380,
+        "saved": 3,
+        "total_interactions": 6,
+        "likes": 0,
+        "comments": 1,
+        "shares": 2
+      }
+    ]
+  },
+  "17914793316365198": {
+    "caption": "💡 浮気する男性と女性、行動パターンが全然違う話。\n\n男性は",
+    "created_at": "2026-05-10T10:28:07+0000",
+    "history": [
+      {
+        "date": "2026-05-11",
+        "views": 3280,
+        "reach": 2634,
+        "saved": 7,
+        "total_interactions": 17,
+        "likes": 10,
+        "comments": 0,
+        "shares": 0
       }
     ]
   }
