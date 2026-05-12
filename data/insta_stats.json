@@ -39,6 +39,10 @@
     {
       "date": "2026-05-12",
       "followers_count": 78
+    },
+    {
+      "date": "2026-05-13",
+      "followers_count": 98
     }
   ],
   "18001719284744959": {
@@ -144,6 +148,16 @@
         "likes": 47,
         "comments": 1,
         "shares": 2
+      },
+      {
+        "date": "2026-05-13",
+        "views": 15633,
+        "reach": 13258,
+        "saved": 34,
+        "total_interactions": 90,
+        "likes": 50,
+        "comments": 1,
+        "shares": 3
       }
     ]
   },
@@ -245,6 +259,16 @@
         "date": "2026-05-12",
         "views": 1310,
         "reach": 1098,
+        "saved": 4,
+        "total_interactions": 9,
+        "likes": 5,
+        "comments": 0,
+        "shares": 0
+      },
+      {
+        "date": "2026-05-13",
+        "views": 1344,
+        "reach": 1126,
         "saved": 4,
         "total_interactions": 9,
         "likes": 5,
@@ -356,6 +380,16 @@
         "likes": 2,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-13",
+        "views": 880,
+        "reach": 710,
+        "saved": 1,
+        "total_interactions": 3,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -462,6 +496,16 @@
         "likes": 4,
         "comments": 0,
         "shares": 1
+      },
+      {
+        "date": "2026-05-13",
+        "views": 1467,
+        "reach": 1273,
+        "saved": 7,
+        "total_interactions": 15,
+        "likes": 5,
+        "comments": 2,
+        "shares": 1
       }
     ]
   },
@@ -558,6 +602,16 @@
         "likes": 42,
         "comments": 0,
         "shares": 2
+      },
+      {
+        "date": "2026-05-13",
+        "views": 10370,
+        "reach": 8300,
+        "saved": 23,
+        "total_interactions": 68,
+        "likes": 43,
+        "comments": 0,
+        "shares": 2
       }
     ]
   },
@@ -644,6 +698,16 @@
         "likes": 2,
         "comments": 1,
         "shares": 0
+      },
+      {
+        "date": "2026-05-13",
+        "views": 573,
+        "reach": 475,
+        "saved": 0,
+        "total_interactions": 3,
+        "likes": 2,
+        "comments": 1,
+        "shares": 0
       }
     ]
   },
@@ -720,6 +784,16 @@
         "likes": 62,
         "comments": 3,
         "shares": 5
+      },
+      {
+        "date": "2026-05-13",
+        "views": 6491,
+        "reach": 5150,
+        "saved": 91,
+        "total_interactions": 183,
+        "likes": 77,
+        "comments": 3,
+        "shares": 8
       }
     ]
   },
@@ -786,6 +860,16 @@
         "likes": 11,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-13",
+        "views": 1766,
+        "reach": 1489,
+        "saved": 5,
+        "total_interactions": 16,
+        "likes": 11,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -842,6 +926,16 @@
         "likes": 19,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-13",
+        "views": 2692,
+        "reach": 2107,
+        "saved": 23,
+        "total_interactions": 42,
+        "likes": 19,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -888,6 +982,16 @@
         "likes": 15,
         "comments": 0,
         "shares": 0
+      },
+      {
+        "date": "2026-05-13",
+        "views": 5804,
+        "reach": 5021,
+        "saved": 19,
+        "total_interactions": 36,
+        "likes": 16,
+        "comments": 0,
+        "shares": 0
       }
     ]
   },
@@ -924,6 +1028,16 @@
         "likes": 2,
         "comments": 2,
         "shares": 2
+      },
+      {
+        "date": "2026-05-13",
+        "views": 684,
+        "reach": 550,
+        "saved": 4,
+        "total_interactions": 11,
+        "likes": 2,
+        "comments": 2,
+        "shares": 2
       }
     ]
   },
@@ -950,6 +1064,16 @@
         "likes": 80,
         "comments": 1,
         "shares": 2
+      },
+      {
+        "date": "2026-05-13",
+        "views": 21020,
+        "reach": 16951,
+        "saved": 40,
+        "total_interactions": 138,
+        "likes": 92,
+        "comments": 1,
+        "shares": 2
       }
     ]
   },
@@ -964,6 +1088,32 @@
         "saved": 25,
         "total_interactions": 43,
         "likes": 18,
+        "comments": 0,
+        "shares": 0
+      },
+      {
+        "date": "2026-05-13",
+        "views": 10327,
+        "reach": 7764,
+        "saved": 98,
+        "total_interactions": 150,
+        "likes": 49,
+        "comments": 0,
+        "shares": 3
+      }
+    ]
+  },
+  "18323596999252667": {
+    "caption": "浮気されたのに「私が悪いのかも」と感じたことはありませんか？",
+    "created_at": "2026-05-12T10:50:07+0000",
+    "history": [
+      {
+        "date": "2026-05-13",
+        "views": 274,
+        "reach": 235,
+        "saved": 0,
+        "total_interactions": 1,
+        "likes": 1,
         "comments": 0,
         "shares": 0
       }
