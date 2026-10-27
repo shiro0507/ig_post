@@ -64,6 +64,18 @@ def _validate_video_url(url: str):
             )
 
 
+def check(r: requests.Response) -> None:
+    """raise_for_status() の代わり。あちらは例外メッセージにURL(=access_tokenクエリ付き)を含み、
+    公開リポジトリのActionsログにトークンが出てしまうため、URLを含めずにエラー内容だけ出す。"""
+    if r.ok:
+        return
+    try:
+        err = r.json().get("error", {})
+    except ValueError:
+        err = {}
+    raise RuntimeError(f"Instagram API error ({r.status_code}): {err.get('message', r.reason)}")
+
+
 def create_reel_container(video_url: str, caption: str, thumb_offset: int | None = None) -> str:
     params = {
         "media_type": "REELS",
@@ -75,7 +87,7 @@ def create_reel_container(video_url: str, caption: str, thumb_offset: int | None
     if thumb_offset is not None:
         params["thumb_offset"] = thumb_offset
     r = requests.post(f"{IG_API}/{ACCOUNT_ID}/media", params=params)
-    r.raise_for_status()
+    check(r)
     return r.json()["id"]
 
 
@@ -86,7 +98,7 @@ def wait_for_container(container_id: str, timeout: int = 300):
             f"{IG_API}/{container_id}",
             params={"fields": "status_code,status,error_message", "access_token": ACCESS_TOKEN},
         )
-        r.raise_for_status()
+        check(r)
         data = r.json()
         status_code = data.get("status_code")
         print(f"  container status: {status_code}")
@@ -103,7 +115,7 @@ def publish_reel(container_id: str) -> str:
         f"{IG_API}/{ACCOUNT_ID}/media_publish",
         params={"creation_id": container_id, "access_token": ACCESS_TOKEN},
     )
-    r.raise_for_status()
+    check(r)
     return r.json()["id"]
 
 
