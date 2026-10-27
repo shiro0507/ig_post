@@ -22,8 +22,9 @@ jobs:
 
       - name: Collect insights
         env:
-          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
-          INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.META_SYSTEM_USER_TOKEN }}
+          # uwa.kitantei の IGアカウントID(graph.facebook.com 方式)。公開情報なのでシークレットにしていない
+          INSTAGRAM_ACCOUNT_ID: "17841425553831460"
         run: python scripts/insight.py
 
       - name: Commit updated stats

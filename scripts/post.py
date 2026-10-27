@@ -10,7 +10,8 @@ ACCESS_TOKEN = os.environ["INSTAGRAM_ACCESS_TOKEN"]
 ACCOUNT_ID = os.environ["INSTAGRAM_ACCOUNT_ID"]
 
 GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "shiro0507/ig_post")
-IG_API = "https://graph.instagram.com/v25.0"
+# Meta システムユーザーの無期限トークン(Facebookログイン方式 / graph.facebook.com)。期限延長は不要。
+IG_API = "https://graph.facebook.com/v21.0"
 
 
 def parse_thumb_offset(value: str, fps: float) -> int:
