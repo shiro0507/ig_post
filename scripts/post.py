@@ -39,9 +39,11 @@ def get_content(target_date: str, skip_video_check: bool = False) -> tuple[Path,
     caption = caption_path.read_text(encoding="utf-8").strip() if caption_path.exists() else ""
 
     thumb_offset = None
-    if thumb_offset_path.exists():
+    # 空の thumb_offset.txt はサムネイル指定なし(Instagramの自動選択)として扱う
+    thumb_text = thumb_offset_path.read_text().strip() if thumb_offset_path.exists() else ""
+    if thumb_text:
         fps = float(fps_path.read_text().strip()) if fps_path.exists() else 30.0
-        thumb_offset = parse_thumb_offset(thumb_offset_path.read_text(), fps)
+        thumb_offset = parse_thumb_offset(thumb_text, fps)
 
     return video_path, caption, thumb_offset
 
@@ -97,7 +99,7 @@ def wait_for_container(container_id: str, timeout: int = 300):
     while time.time() < deadline:
         r = requests.get(
             f"{IG_API}/{container_id}",
-            params={"fields": "status_code,status,error_message", "access_token": ACCESS_TOKEN},
+            params={"fields": "status_code,status", "access_token": ACCESS_TOKEN},
         )
         check(r)
         data = r.json()
